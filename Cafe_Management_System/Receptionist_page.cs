@@ -15,12 +15,11 @@ namespace Cafe_Management_System
         public Receptionist_page()
         {
             InitializeComponent();
-            this.FormClosing += Receptionist_Page_FormClosing;
         }
 
         private void Receptionist_Page_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Application.Exit();
+        
         }
 
         private void Back_Click(object sender, EventArgs e)

@@ -22,8 +22,18 @@ namespace Cafe_Management_System
 
     private void Main_FormClosing(object sender, FormClosingEventArgs e)
     {
-        Application.Exit();
-    }
+            DialogResult result = MessageBox.Show("Are you sure you want to exit?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit();
+
+            }
+            else
+            {
+                e.Cancel = true;
+            }
+        }
 
 
     private void location_link_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

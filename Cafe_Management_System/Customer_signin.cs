@@ -3,23 +3,18 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Configuration;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Cafe_Management_System
 {
-
-    public partial class Admin_page : Form
+    public partial class Customer_signin : Form
     {
-
-
-
-        public Admin_page()
+        public Customer_signin()
         {
             InitializeComponent();
         }
@@ -28,12 +23,15 @@ namespace Cafe_Management_System
 
 
 
-
+        private void Waiter_Page_FormClosing(object sender, FormClosingEventArgs e)
+        {
+          
+        }
 
         private void Back_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Login_forms login_f = new Login_forms();
+            Customer_page login_f = new Customer_page();
             login_f.Show();
         }
 
@@ -42,36 +40,39 @@ namespace Cafe_Management_System
             Application.Exit();
         }
 
-        private void Admin_signin_Click(object sender, EventArgs e)
+        private void Customer__signin_Click(object sender, EventArgs e)
         {
+
+
             SqlConnection con = new SqlConnection(cs);
-            string query = "select * from [admin] where admin_id=@adminid and admin_password=@pass";
+            string query = "select * from [Customer] where  Customer_name=@Customername and Customer_password=@pass";
             SqlCommand cmd = new SqlCommand(query, con);
-            cmd.Parameters.AddWithValue("@adminid", Admin_id_input.Text.Trim());
-            cmd.Parameters.AddWithValue("@pass", Admin_password_input.Text.Trim());
+            cmd.Parameters.AddWithValue("@Customername", Customer_id_input.Text.Trim());
+            cmd.Parameters.AddWithValue("@pass", Customer_password_input.Text.Trim());
             con.Open();
             SqlDataReader dr = cmd.ExecuteReader();
+
             if (dr.HasRows == true)
             {
                 dr.Read();
-                var name = dr["admin_id"].ToString();
-                var pass = dr[1].ToString();
+                var name = dr["Customer_name"].ToString();
+                var pass = dr["Customer_password"].ToString();
                 dr.Close();
-                if (name == Admin_id_input.Text && pass == Admin_password_input.Text)
+                if (name == Customer_id_input.Text && pass == Customer_password_input.Text)
                 {
                     MessageBox.Show("Successfully Login");
                     this.Hide();
-                    Admin_function af = new Admin_function();
-                    af.Show();
+                    Customer_page cp = new Customer_page(); 
+                    cp.Show();
 
                 }
-                else 
+                else
                 {
                     MessageBox.Show(" failed to extract data");
 
                 }
 
-               
+
 
             }
             else
@@ -79,7 +80,8 @@ namespace Cafe_Management_System
                 MessageBox.Show("lgoin failed");
             }
 
-            con.Close();
+
+
 
         }
     }

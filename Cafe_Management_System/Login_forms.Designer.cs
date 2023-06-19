@@ -35,9 +35,7 @@
             this.Chef_signin = new System.Windows.Forms.Button();
             this.Customer_box = new System.Windows.Forms.GroupBox();
             this.Customer_signin = new System.Windows.Forms.Button();
-            this.Waiter_box = new System.Windows.Forms.GroupBox();
-            this.Waiter_signin = new System.Windows.Forms.Button();
-            this.Receptionist_box = new System.Windows.Forms.GroupBox();
+            this.Staff_box = new System.Windows.Forms.GroupBox();
             this.Receptionist_sign = new System.Windows.Forms.Button();
             this.Resturant_Name = new System.Windows.Forms.TextBox();
             this.Back_button = new System.Windows.Forms.Button();
@@ -45,8 +43,7 @@
             this.Admin_box.SuspendLayout();
             this.Chef_box.SuspendLayout();
             this.Customer_box.SuspendLayout();
-            this.Waiter_box.SuspendLayout();
-            this.Receptionist_box.SuspendLayout();
+            this.Staff_box.SuspendLayout();
             this.SuspendLayout();
             // 
             // Admin_box
@@ -103,7 +100,7 @@
             this.Customer_box.Controls.Add(this.Customer_signin);
             this.Customer_box.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold);
             this.Customer_box.ForeColor = System.Drawing.Color.White;
-            this.Customer_box.Location = new System.Drawing.Point(531, 239);
+            this.Customer_box.Location = new System.Drawing.Point(53, 359);
             this.Customer_box.Name = "Customer_box";
             this.Customer_box.Size = new System.Drawing.Size(211, 148);
             this.Customer_box.TabIndex = 1;
@@ -121,42 +118,18 @@
             this.Customer_signin.UseVisualStyleBackColor = false;
             this.Customer_signin.Click += new System.EventHandler(this.Customer_signin_Click);
             // 
-            // Waiter_box
+            // Staff_box
             // 
-            this.Waiter_box.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.Waiter_box.Controls.Add(this.Waiter_signin);
-            this.Waiter_box.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold);
-            this.Waiter_box.ForeColor = System.Drawing.Color.White;
-            this.Waiter_box.Location = new System.Drawing.Point(53, 359);
-            this.Waiter_box.Name = "Waiter_box";
-            this.Waiter_box.Size = new System.Drawing.Size(211, 148);
-            this.Waiter_box.TabIndex = 1;
-            this.Waiter_box.TabStop = false;
-            this.Waiter_box.Text = "Waiter";
-            // 
-            // Waiter_signin
-            // 
-            this.Waiter_signin.BackColor = System.Drawing.Color.Green;
-            this.Waiter_signin.Location = new System.Drawing.Point(39, 64);
-            this.Waiter_signin.Name = "Waiter_signin";
-            this.Waiter_signin.Size = new System.Drawing.Size(119, 48);
-            this.Waiter_signin.TabIndex = 0;
-            this.Waiter_signin.Text = "Sign In";
-            this.Waiter_signin.UseVisualStyleBackColor = false;
-            this.Waiter_signin.Click += new System.EventHandler(this.Waiter_signin_Click);
-            // 
-            // Receptionist_box
-            // 
-            this.Receptionist_box.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.Receptionist_box.Controls.Add(this.Receptionist_sign);
-            this.Receptionist_box.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold);
-            this.Receptionist_box.ForeColor = System.Drawing.Color.White;
-            this.Receptionist_box.Location = new System.Drawing.Point(961, 395);
-            this.Receptionist_box.Name = "Receptionist_box";
-            this.Receptionist_box.Size = new System.Drawing.Size(211, 148);
-            this.Receptionist_box.TabIndex = 1;
-            this.Receptionist_box.TabStop = false;
-            this.Receptionist_box.Text = "Receptionist";
+            this.Staff_box.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.Staff_box.Controls.Add(this.Receptionist_sign);
+            this.Staff_box.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold);
+            this.Staff_box.ForeColor = System.Drawing.Color.White;
+            this.Staff_box.Location = new System.Drawing.Point(961, 395);
+            this.Staff_box.Name = "Staff_box";
+            this.Staff_box.Size = new System.Drawing.Size(211, 148);
+            this.Staff_box.TabIndex = 1;
+            this.Staff_box.TabStop = false;
+            this.Staff_box.Text = "Staff";
             // 
             // Receptionist_sign
             // 
@@ -217,8 +190,7 @@
             this.Controls.Add(this.Exit_button);
             this.Controls.Add(this.Back_button);
             this.Controls.Add(this.Resturant_Name);
-            this.Controls.Add(this.Receptionist_box);
-            this.Controls.Add(this.Waiter_box);
+            this.Controls.Add(this.Staff_box);
             this.Controls.Add(this.Customer_box);
             this.Controls.Add(this.Chef_box);
             this.Controls.Add(this.Admin_box);
@@ -228,8 +200,7 @@
             this.Admin_box.ResumeLayout(false);
             this.Chef_box.ResumeLayout(false);
             this.Customer_box.ResumeLayout(false);
-            this.Waiter_box.ResumeLayout(false);
-            this.Receptionist_box.ResumeLayout(false);
+            this.Staff_box.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -243,9 +214,7 @@
         private System.Windows.Forms.Button Chef_signin;
         public System.Windows.Forms.GroupBox Customer_box;
         private System.Windows.Forms.Button Customer_signin;
-        public System.Windows.Forms.GroupBox Waiter_box;
-        private System.Windows.Forms.Button Waiter_signin;
-        public System.Windows.Forms.GroupBox Receptionist_box;
+        public System.Windows.Forms.GroupBox Staff_box;
         private System.Windows.Forms.Button Receptionist_sign;
         private System.Windows.Forms.TextBox Resturant_Name;
         private System.Windows.Forms.Button Back_button;

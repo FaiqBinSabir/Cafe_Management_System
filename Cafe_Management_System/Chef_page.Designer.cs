@@ -94,6 +94,7 @@
             this.Chef_signin.TabIndex = 3;
             this.Chef_signin.Text = "Sign In";
             this.Chef_signin.UseVisualStyleBackColor = false;
+            this.Chef_signin.Click += new System.EventHandler(this.Chef_signin_Click);
             // 
             // Chef_password_input
             // 

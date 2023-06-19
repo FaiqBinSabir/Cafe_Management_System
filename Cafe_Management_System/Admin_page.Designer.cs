@@ -68,6 +68,7 @@
             this.Admin_signin.TabIndex = 3;
             this.Admin_signin.Text = "Sign In";
             this.Admin_signin.UseVisualStyleBackColor = false;
+            this.Admin_signin.Click += new System.EventHandler(this.Admin_signin_Click);
             // 
             // Admin_password_input
             // 

@@ -15,12 +15,11 @@ namespace Cafe_Management_System
         public Login_forms()
         {
             InitializeComponent();
-            this.FormClosing += Login_forms_FormClosing;
         }
 
         private void Login_forms_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Application.Exit();
+           
         }
 
 
@@ -34,15 +33,15 @@ namespace Cafe_Management_System
         private void Waiter_signin_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Waiter_page waiter_p = new Waiter_page();
+            Customer_signin waiter_p = new Customer_signin();
             waiter_p.Show();
         }
 
         private void Customer_signin_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Customer_page customer_p = new Customer_page();
-            customer_p.Show();
+            Customer_page cs = new Customer_page();
+            cs.Show();
         }
 
         private void Chef_signin_Click(object sender, EventArgs e)

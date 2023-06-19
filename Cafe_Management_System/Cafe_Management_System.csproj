@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -46,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin_function.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_function.Designer.cs">
+      <DependentUpon>Admin_function.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin_page.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +83,18 @@
     <Compile Include="Login_forms.Designer.cs">
       <DependentUpon>Login_forms.cs</DependentUpon>
     </Compile>
+    <Compile Include="Menu_Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu_Detail.Designer.cs">
+      <DependentUpon>Menu_Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product_Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product_Detail.Designer.cs">
+      <DependentUpon>Product_Detail.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Receptionist_page.cs">
@@ -84,12 +103,33 @@
     <Compile Include="Receptionist_page.Designer.cs">
       <DependentUpon>Receptionist_page.cs</DependentUpon>
     </Compile>
-    <Compile Include="Waiter_page.cs">
+    <Compile Include="Customer_signin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Waiter_page.Designer.cs">
-      <DependentUpon>Waiter_page.cs</DependentUpon>
+    <Compile Include="Customer_signin.Designer.cs">
+      <DependentUpon>Customer_signin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Staff_Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff_Detail.Designer.cs">
+      <DependentUpon>Staff_Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier_Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplier_Detail.Designer.cs">
+      <DependentUpon>Supplier_Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vendor_Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vendor_Detail.Designer.cs">
+      <DependentUpon>Vendor_Detail.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin_function.resx">
+      <DependentUpon>Admin_function.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin_page.resx">
       <DependentUpon>Admin_page.cs</DependentUpon>
     </EmbeddedResource>
@@ -105,6 +145,12 @@
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Menu_Detail.resx">
+      <DependentUpon>Menu_Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product_Detail.resx">
+      <DependentUpon>Product_Detail.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -117,8 +163,17 @@
     <EmbeddedResource Include="Receptionist_page.resx">
       <DependentUpon>Receptionist_page.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Waiter_page.resx">
-      <DependentUpon>Waiter_page.cs</DependentUpon>
+    <EmbeddedResource Include="Customer_signin.resx">
+      <DependentUpon>Customer_signin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff_Detail.resx">
+      <DependentUpon>Staff_Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplier_Detail.resx">
+      <DependentUpon>Supplier_Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vendor_Detail.resx">
+      <DependentUpon>Vendor_Detail.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
