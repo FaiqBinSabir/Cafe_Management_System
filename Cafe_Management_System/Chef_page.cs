@@ -23,10 +23,7 @@ namespace Cafe_Management_System
 
         string cs = ConfigurationManager.ConnectionStrings["con"].ConnectionString;
 
-        private void Chef_Page_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            
-        }
+       
 
         private void Chef_page_Load(object sender, EventArgs e)
         {
@@ -36,34 +33,45 @@ namespace Cafe_Management_System
         private void Back_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Login_forms login_f = new Login_forms();    
+            Login_forms login_f = new Login_forms();
 
-        login_f.Show();
+            login_f.Show();
         }
 
         private void Exit_Click(object sender, EventArgs e)
         {
-            Application.Exit(); 
+            Application.Exit();
         }
 
-        private void Chef_signin_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            SqlConnection cs = new SqlConnection();
 
-            string query =( "select * from staff");
-            SqlCommand cmd = new SqlCommand(query, cs); 
-            cs.Open();
+            SqlConnection con = new SqlConnection(cs);
+            string query = "select * from [staff] where  staff_id=@name,staff_password=@pass and staff_type=@type";
+            SqlCommand cmd = new SqlCommand(query, con);
+            cmd.Parameters.AddWithValue("@name", Chef_id_input.Text.Trim());
+            cmd.Parameters.AddWithValue("@pass", Chef_password_input.Text.Trim());
+            cmd.Parameters.AddWithValue("@type", textBox1.Text.Trim());
+            con.Open();
+            SqlDataReader dr = cmd.ExecuteReader();
 
-           int a = cmd.ExecuteNonQuery();
-            if (a>0)
+            if (dr.HasRows == true)
             {
-                MessageBox.Show("sucewsss");
+                dr.Read();
+                 MessageBox.Show("Successfully Login");
+                    this.Hide();
+                    Customer_page cp = new Customer_page();
+                    cp.Show();
+
+               
+
+
+
             }
             else
             {
-                MessageBox.Show("failed");
+                MessageBox.Show("lgoin failed");
             }
-            cs.Close(); 
 
         }
     }

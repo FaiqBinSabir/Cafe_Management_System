@@ -61,5 +61,33 @@ namespace Cafe_Management_System
            Menu_Detail md = new Menu_Detail();
             md.Show();
         }
+
+        private void Product_Detail_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Product_Detail pd = new Product_Detail();
+            pd.Show();
+        }
+
+        private void Supplier_Details_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Supplier_Detail sd = new Supplier_Detail();
+            sd.Show();
+        }
+
+        private void Vendor_Details_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Vendor_Detail vd = new Vendor_Detail(); 
+            vd.Show();
+        }
+
+        private void Staff_Detail_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Staff_Detail sd = new Staff_Detail();
+            sd.Show();
+        }
     }
 }

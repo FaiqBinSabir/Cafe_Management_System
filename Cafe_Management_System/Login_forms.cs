@@ -30,12 +30,7 @@ namespace Cafe_Management_System
             admin_p.Show();
         }
 
-        private void Waiter_signin_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Customer_signin waiter_p = new Customer_signin();
-            waiter_p.Show();
-        }
+       
 
         private void Customer_signin_Click(object sender, EventArgs e)
         {
@@ -51,13 +46,7 @@ namespace Cafe_Management_System
             chef_p.Show();
         }
 
-        private void Receptionist_sign_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Receptionist_page receptionist_p = new Receptionist_page();
-            receptionist_p.Show();
-        }
-
+       
         private void Back_button_Click(object sender, EventArgs e)
         {
             this.Hide();

@@ -75,13 +75,7 @@ namespace Cafe_Management_System
             dataGridView1.DataSource = dataTable;
         }
 
-        private void dataGridView1_MouseDoubleClick(object sender, MouseEventArgs e)
-        {
-            Menu_id_input.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
-            Menu_name_input.Text= dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
-            Menu_Price_input.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
-            Admin_id_input.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
-        }
+       
 
         private void Update_Menu_Click(object sender, EventArgs e)
         {
@@ -107,6 +101,53 @@ namespace Cafe_Management_System
 
             defult();
             con.Close();
+        }
+
+        private void Insert_Menu_Click(object sender, EventArgs e)
+        {
+            SqlConnection con = new SqlConnection(cs);
+            string query = "insert into Menu values (@name,@price,@id)";
+            SqlCommand cmd = new SqlCommand(query, con);
+
+            cmd.Parameters.AddWithValue("@name", Menu_name_input.Text);
+            cmd.Parameters.AddWithValue("@price", Menu_Price_input.Text);
+            cmd.Parameters.AddWithValue("@id",Admin_id_input.Text);
+            con.Open();
+
+            int a = cmd.ExecuteNonQuery();
+
+            if (a > 0)
+            {
+                MessageBox.Show("account created sucessfully");
+                this.Hide();
+                Customer_signin cs = new Customer_signin();
+                cs.Show();
+
+
+
+
+            }
+            else
+            {
+
+                MessageBox.Show("cant entered your data");
+            }
+            con.Close();
+        }
+
+        private void Back_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Admin_function admin_Function= new Admin_function();
+            admin_Function.Show();
+        }
+
+        private void dataGridView1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            Menu_id_input.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+            Menu_name_input.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
+            Menu_Price_input.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
+            Admin_id_input.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
         }
     }
 }

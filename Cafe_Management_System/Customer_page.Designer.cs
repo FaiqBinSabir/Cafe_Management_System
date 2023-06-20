@@ -38,17 +38,18 @@
             this.Customer_signin = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.Customer_signin_box = new System.Windows.Forms.GroupBox();
+            this.Customer_payment_input = new System.Windows.Forms.TextBox();
+            this.Customer_email_input = new System.Windows.Forms.TextBox();
+            this.Customer_number_input = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.Customer__signin = new System.Windows.Forms.Button();
             this.Customer_password_input = new System.Windows.Forms.TextBox();
             this.Customer_password = new System.Windows.Forms.Label();
             this.Customer_name_input = new System.Windows.Forms.TextBox();
             this.Customer_id = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.Customer_number_input = new System.Windows.Forms.TextBox();
-            this.Customer_email_input = new System.Windows.Forms.TextBox();
-            this.Customer_payment_input = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.Customer_signin_box.SuspendLayout();
             this.SuspendLayout();
@@ -138,7 +139,7 @@
             this.Customer_signin.Name = "Customer_signin";
             this.Customer_signin.Size = new System.Drawing.Size(197, 53);
             this.Customer_signin.TabIndex = 19;
-            this.Customer_signin.Text = "Sign In";
+            this.Customer_signin.Text = "Log In";
             this.Customer_signin.UseVisualStyleBackColor = false;
             this.Customer_signin.Click += new System.EventHandler(this.Customer_signin_Click);
             // 
@@ -147,9 +148,9 @@
             this.button1.BackColor = System.Drawing.Color.Blue;
             this.button1.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold);
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(87, 329);
+            this.button1.Location = new System.Drawing.Point(67, 329);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(214, 53);
+            this.button1.Size = new System.Drawing.Size(234, 53);
             this.button1.TabIndex = 20;
             this.button1.Text = "Create Account";
             this.button1.UseVisualStyleBackColor = false;
@@ -177,6 +178,55 @@
             this.Customer_signin_box.TabIndex = 21;
             this.Customer_signin_box.TabStop = false;
             this.Customer_signin_box.Text = "Customer Signin";
+            this.Customer_signin_box.Visible = false;
+            // 
+            // Customer_payment_input
+            // 
+            this.Customer_payment_input.Location = new System.Drawing.Point(168, 288);
+            this.Customer_payment_input.Name = "Customer_payment_input";
+            this.Customer_payment_input.Size = new System.Drawing.Size(276, 40);
+            this.Customer_payment_input.TabIndex = 9;
+            // 
+            // Customer_email_input
+            // 
+            this.Customer_email_input.Location = new System.Drawing.Point(169, 228);
+            this.Customer_email_input.Name = "Customer_email_input";
+            this.Customer_email_input.Size = new System.Drawing.Size(276, 40);
+            this.Customer_email_input.TabIndex = 8;
+            // 
+            // Customer_number_input
+            // 
+            this.Customer_number_input.Location = new System.Drawing.Point(169, 167);
+            this.Customer_number_input.Name = "Customer_number_input";
+            this.Customer_number_input.Size = new System.Drawing.Size(276, 40);
+            this.Customer_number_input.TabIndex = 7;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(16, 167);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(118, 35);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Number:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(16, 237);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(88, 35);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Email:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(16, 291);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(125, 35);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Payment:";
             // 
             // Customer__signin
             // 
@@ -222,53 +272,15 @@
             this.Customer_id.TabIndex = 0;
             this.Customer_id.Text = "Name :";
             // 
-            // label1
+            // panel1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(16, 291);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(125, 35);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Payment:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(16, 237);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(88, 35);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Email:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(16, 167);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(118, 35);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Number:";
-            // 
-            // Customer_number_input
-            // 
-            this.Customer_number_input.Location = new System.Drawing.Point(169, 167);
-            this.Customer_number_input.Name = "Customer_number_input";
-            this.Customer_number_input.Size = new System.Drawing.Size(276, 40);
-            this.Customer_number_input.TabIndex = 7;
-            // 
-            // Customer_email_input
-            // 
-            this.Customer_email_input.Location = new System.Drawing.Point(169, 228);
-            this.Customer_email_input.Name = "Customer_email_input";
-            this.Customer_email_input.Size = new System.Drawing.Size(276, 40);
-            this.Customer_email_input.TabIndex = 8;
-            // 
-            // Customer_payment_input
-            // 
-            this.Customer_payment_input.Location = new System.Drawing.Point(168, 288);
-            this.Customer_payment_input.Name = "Customer_payment_input";
-            this.Customer_payment_input.Size = new System.Drawing.Size(276, 40);
-            this.Customer_payment_input.TabIndex = 9;
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel1.Location = new System.Drawing.Point(290, 84);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(980, 463);
+            this.panel1.TabIndex = 22;
             // 
             // Customer_page
             // 
@@ -276,6 +288,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1282, 653);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.Customer_signin_box);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Customer_signin);
@@ -317,5 +330,6 @@
         private System.Windows.Forms.Label Customer_password;
         private System.Windows.Forms.TextBox Customer_name_input;
         private System.Windows.Forms.Label Customer_id;
+        private System.Windows.Forms.Panel panel1;
     }
 }

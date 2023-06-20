@@ -88,6 +88,7 @@
             this.Staff_Detail.TabIndex = 21;
             this.Staff_Detail.Text = "Staff Detail";
             this.Staff_Detail.UseVisualStyleBackColor = false;
+            this.Staff_Detail.Click += new System.EventHandler(this.Staff_Detail_Click);
             // 
             // Menu_Detail
             // 
@@ -113,6 +114,7 @@
             this.Product_Detail.TabIndex = 23;
             this.Product_Detail.Text = "Product Detail";
             this.Product_Detail.UseVisualStyleBackColor = false;
+            this.Product_Detail.Click += new System.EventHandler(this.Product_Detail_Click);
             // 
             // View_Tables_Reservation
             // 
@@ -138,6 +140,7 @@
             this.Supplier_Details.TabIndex = 25;
             this.Supplier_Details.Text = "Supplier Details";
             this.Supplier_Details.UseVisualStyleBackColor = false;
+            this.Supplier_Details.Click += new System.EventHandler(this.Supplier_Details_Click);
             // 
             // Vendor_Details
             // 
@@ -150,6 +153,7 @@
             this.Vendor_Details.TabIndex = 26;
             this.Vendor_Details.Text = "Vendor Details";
             this.Vendor_Details.UseVisualStyleBackColor = false;
+            this.Vendor_Details.Click += new System.EventHandler(this.Vendor_Details_Click);
             // 
             // Back
             // 

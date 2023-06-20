@@ -72,6 +72,7 @@
             this.Back.TabIndex = 7;
             this.Back.Text = "Back";
             this.Back.UseVisualStyleBackColor = false;
+            this.Back.Click += new System.EventHandler(this.Back_Click);
             // 
             // View_Menu
             // 
@@ -123,6 +124,7 @@
             this.Insert_Menu.TabIndex = 11;
             this.Insert_Menu.Text = "Insert Menu";
             this.Insert_Menu.UseVisualStyleBackColor = false;
+            this.Insert_Menu.Click += new System.EventHandler(this.Insert_Menu_Click);
             // 
             // dataGridView1
             // 

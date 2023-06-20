@@ -32,7 +32,8 @@
             this.Resturant_Name = new System.Windows.Forms.TextBox();
             this.Chef_heading = new System.Windows.Forms.TextBox();
             this.chef_signin_box = new System.Windows.Forms.GroupBox();
-            this.Chef_signin = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.Chef_password_input = new System.Windows.Forms.TextBox();
             this.chef_password = new System.Windows.Forms.Label();
             this.Chef_id_input = new System.Windows.Forms.TextBox();
@@ -71,34 +72,45 @@
             // chef_signin_box
             // 
             this.chef_signin_box.BackColor = System.Drawing.Color.Transparent;
-            this.chef_signin_box.Controls.Add(this.Chef_signin);
+            this.chef_signin_box.Controls.Add(this.button1);
+            this.chef_signin_box.Controls.Add(this.textBox1);
             this.chef_signin_box.Controls.Add(this.Chef_password_input);
             this.chef_signin_box.Controls.Add(this.chef_password);
             this.chef_signin_box.Controls.Add(this.Chef_id_input);
             this.chef_signin_box.Controls.Add(this.chef_id);
             this.chef_signin_box.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold);
             this.chef_signin_box.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.chef_signin_box.Location = new System.Drawing.Point(425, 158);
+            this.chef_signin_box.Location = new System.Drawing.Point(429, 122);
             this.chef_signin_box.Name = "chef_signin_box";
-            this.chef_signin_box.Size = new System.Drawing.Size(474, 404);
+            this.chef_signin_box.Size = new System.Drawing.Size(474, 474);
             this.chef_signin_box.TabIndex = 12;
             this.chef_signin_box.TabStop = false;
             this.chef_signin_box.Text = "Chef Signin";
             // 
-            // Chef_signin
+            // button1
             // 
-            this.Chef_signin.BackColor = System.Drawing.Color.Blue;
-            this.Chef_signin.Location = new System.Drawing.Point(105, 315);
-            this.Chef_signin.Name = "Chef_signin";
-            this.Chef_signin.Size = new System.Drawing.Size(220, 53);
-            this.Chef_signin.TabIndex = 3;
-            this.Chef_signin.Text = "Sign In";
-            this.Chef_signin.UseVisualStyleBackColor = false;
-            this.Chef_signin.Click += new System.EventHandler(this.Chef_signin_Click);
+            this.button1.BackColor = System.Drawing.Color.Blue;
+            this.button1.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold);
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Location = new System.Drawing.Point(98, 389);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(197, 53);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "Sign in";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(49, 312);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(276, 40);
+            this.textBox1.TabIndex = 4;
+            this.textBox1.Text = "Chef";
             // 
             // Chef_password_input
             // 
-            this.Chef_password_input.Location = new System.Drawing.Point(49, 240);
+            this.Chef_password_input.Location = new System.Drawing.Point(49, 216);
             this.Chef_password_input.Name = "Chef_password_input";
             this.Chef_password_input.Size = new System.Drawing.Size(276, 40);
             this.Chef_password_input.TabIndex = 2;
@@ -106,7 +118,7 @@
             // chef_password
             // 
             this.chef_password.AutoSize = true;
-            this.chef_password.Location = new System.Drawing.Point(35, 185);
+            this.chef_password.Location = new System.Drawing.Point(35, 178);
             this.chef_password.Name = "chef_password";
             this.chef_password.Size = new System.Drawing.Size(126, 35);
             this.chef_password.TabIndex = 2;
@@ -181,12 +193,13 @@
         private System.Windows.Forms.TextBox Resturant_Name;
         private System.Windows.Forms.TextBox Chef_heading;
         private System.Windows.Forms.GroupBox chef_signin_box;
-        private System.Windows.Forms.Button Chef_signin;
         private System.Windows.Forms.TextBox Chef_password_input;
         private System.Windows.Forms.Label chef_password;
         private System.Windows.Forms.TextBox Chef_id_input;
         private System.Windows.Forms.Label chef_id;
         private System.Windows.Forms.Button Back;
         private System.Windows.Forms.Button Exit;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button1;
     }
 }

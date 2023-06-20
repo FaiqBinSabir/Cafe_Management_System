@@ -41,6 +41,7 @@ namespace Cafe_Management_System
 
         private void View_Menu_Click(object sender, EventArgs e)
         {
+            panel1.Visible= false;  
             dataGridView1.Visible = true;
             Customer_signin_box.Visible = false;
 
@@ -66,6 +67,7 @@ namespace Cafe_Management_System
 
         private void button1_Click(object sender, EventArgs e)
         {
+            panel1.Visible = false;
             Customer_signin_box.Visible = true;
             dataGridView1.Visible = false;
            

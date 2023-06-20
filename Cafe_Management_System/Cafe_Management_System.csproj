@@ -97,12 +97,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Receptionist_page.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Receptionist_page.Designer.cs">
-      <DependentUpon>Receptionist_page.cs</DependentUpon>
-    </Compile>
     <Compile Include="Customer_signin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -160,9 +154,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Receptionist_page.resx">
-      <DependentUpon>Receptionist_page.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Customer_signin.resx">
       <DependentUpon>Customer_signin.cs</DependentUpon>
     </EmbeddedResource>
