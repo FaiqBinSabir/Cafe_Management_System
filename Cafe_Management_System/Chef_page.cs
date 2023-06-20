@@ -47,11 +47,11 @@ namespace Cafe_Management_System
         {
 
             SqlConnection con = new SqlConnection(cs);
-            string query = "select * from [staff] where  staff_id=@name,staff_password=@pass and staff_type=@type";
+            string query = "select * from [staff] where  staff_id=@name and staff_password=@pass";
             SqlCommand cmd = new SqlCommand(query, con);
             cmd.Parameters.AddWithValue("@name", Chef_id_input.Text.Trim());
             cmd.Parameters.AddWithValue("@pass", Chef_password_input.Text.Trim());
-            cmd.Parameters.AddWithValue("@type", textBox1.Text.Trim());
+            //cmd.Parameters.AddWithValue("@type", textBox1.Text.Trim());
             con.Open();
             SqlDataReader dr = cmd.ExecuteReader();
 

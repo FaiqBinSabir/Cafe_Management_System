@@ -104,6 +104,7 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(49, 312);
             this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(276, 40);
             this.textBox1.TabIndex = 4;
             this.textBox1.Text = "Chef";
