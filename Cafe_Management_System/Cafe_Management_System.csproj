@@ -59,6 +59,12 @@
     <Compile Include="Admin_page.Designer.cs">
       <DependentUpon>Admin_page.cs</DependentUpon>
     </Compile>
+    <Compile Include="Chef_functions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chef_functions.Designer.cs">
+      <DependentUpon>Chef_functions.cs</DependentUpon>
+    </Compile>
     <Compile Include="Chef_page.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +76,12 @@
     </Compile>
     <Compile Include="Customer_page.Designer.cs">
       <DependentUpon>Customer_page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_table_ Reservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer_table_ Reservation.Designer.cs">
+      <DependentUpon>Customer_table_ Reservation.cs</DependentUpon>
     </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
@@ -103,6 +115,12 @@
     <Compile Include="Customer_signin.Designer.cs">
       <DependentUpon>Customer_signin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reports_analyticscs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports_analyticscs.Designer.cs">
+      <DependentUpon>Reports_analyticscs.cs</DependentUpon>
+    </Compile>
     <Compile Include="Staff_Detail.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,11 +145,17 @@
     <EmbeddedResource Include="Admin_page.resx">
       <DependentUpon>Admin_page.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Chef_functions.resx">
+      <DependentUpon>Chef_functions.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Chef_page.resx">
       <DependentUpon>Chef_page.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Customer_page.resx">
       <DependentUpon>Customer_page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer_table_ Reservation.resx">
+      <DependentUpon>Customer_table_ Reservation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login_forms.resx">
       <DependentUpon>Login_forms.cs</DependentUpon>
@@ -156,6 +180,9 @@
     </Compile>
     <EmbeddedResource Include="Customer_signin.resx">
       <DependentUpon>Customer_signin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports_analyticscs.resx">
+      <DependentUpon>Reports_analyticscs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Staff_Detail.resx">
       <DependentUpon>Staff_Detail.cs</DependentUpon>

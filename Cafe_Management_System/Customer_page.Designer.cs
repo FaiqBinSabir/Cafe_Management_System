@@ -139,7 +139,7 @@
             this.Customer_signin.Name = "Customer_signin";
             this.Customer_signin.Size = new System.Drawing.Size(197, 53);
             this.Customer_signin.TabIndex = 19;
-            this.Customer_signin.Text = "Log In";
+            this.Customer_signin.Text = "211";
             this.Customer_signin.UseVisualStyleBackColor = false;
             this.Customer_signin.Click += new System.EventHandler(this.Customer_signin_Click);
             // 

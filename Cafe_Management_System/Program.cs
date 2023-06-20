@@ -16,7 +16,7 @@ namespace Cafe_Management_System
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Admin_function());
+            Application.Run(new Customer_table__Reservation());
         }
     }
 }
