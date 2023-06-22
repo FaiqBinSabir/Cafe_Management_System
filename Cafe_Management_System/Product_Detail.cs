@@ -156,10 +156,51 @@ namespace Cafe_Management_System
         private void dataGridView1_MouseDoubleClick(object sender, MouseEventArgs e)
         {
             Product_id_input.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
-            Product_name_input.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
-            product_quan_input.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
+            Product_name_input.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
+            product_quan_input.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
             Vendor_id_input.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
             Admin_id_inputt.Text = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
+        }
+
+        private void product_quan_input_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                int a = Convert.ToInt32(product_quan_input.Text);
+                if (a < 0)
+                {
+                    product_quan_input.Text = "";
+
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+
+                MessageBox.Show("netagtive value can't entered"+ex);
+            }
+           
+        }
+
+        private void Vendor_id_input_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                int a = Convert.ToInt32(Vendor_id_input.Text);
+                if (a < 0)
+                {
+                    Vendor_id_input.Text = "";
+
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+
+                MessageBox.Show("netagtive value can't entered" + ex);
+            }
         }
     }
 }

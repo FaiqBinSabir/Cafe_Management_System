@@ -89,5 +89,17 @@ namespace Cafe_Management_System
             Staff_Detail sd = new Staff_Detail();
             sd.Show();
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            Reports_analyticscs ra = new Reports_analyticscs();
+            ra.Show();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

@@ -1,9 +1,9 @@
-﻿namespace Cafe_Management_System
+﻿                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  namespace Cafe_Management_System
 {
     partial class Admin_function
     {
         /// <summary>
-        /// Required designer variable.
+        /// Required designer variable. 
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Admin_function));
             this.Exit = new System.Windows.Forms.Button();
             this.View_Customer = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -44,10 +45,10 @@
             // 
             // Exit
             // 
-            this.Exit.BackColor = System.Drawing.Color.Blue;
+            this.Exit.BackColor = System.Drawing.Color.DarkSlateGray;
             this.Exit.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold);
             this.Exit.ForeColor = System.Drawing.Color.White;
-            this.Exit.Location = new System.Drawing.Point(622, 539);
+            this.Exit.Location = new System.Drawing.Point(1058, 582);
             this.Exit.Name = "Exit";
             this.Exit.Size = new System.Drawing.Size(187, 47);
             this.Exit.TabIndex = 0;
@@ -57,10 +58,13 @@
             // 
             // View_Customer
             // 
-            this.View_Customer.BackColor = System.Drawing.Color.Blue;
+            this.View_Customer.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.View_Customer.FlatAppearance.BorderSize = 2;
+            this.View_Customer.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Green;
+            this.View_Customer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.View_Customer.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold);
             this.View_Customer.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.View_Customer.Location = new System.Drawing.Point(23, 12);
+            this.View_Customer.Location = new System.Drawing.Point(65, 12);
             this.View_Customer.Name = "View_Customer";
             this.View_Customer.Size = new System.Drawing.Size(253, 64);
             this.View_Customer.TabIndex = 19;
@@ -70,20 +74,25 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.RoyalBlue;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(599, 25);
+            this.dataGridView1.Location = new System.Drawing.Point(608, 24);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(662, 486);
             this.dataGridView1.TabIndex = 20;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Staff_Detail
             // 
-            this.Staff_Detail.BackColor = System.Drawing.Color.Blue;
+            this.Staff_Detail.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.Staff_Detail.FlatAppearance.BorderSize = 2;
+            this.Staff_Detail.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Green;
+            this.Staff_Detail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Staff_Detail.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold);
             this.Staff_Detail.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Staff_Detail.Location = new System.Drawing.Point(23, 93);
+            this.Staff_Detail.Location = new System.Drawing.Point(340, 176);
             this.Staff_Detail.Name = "Staff_Detail";
             this.Staff_Detail.Size = new System.Drawing.Size(253, 64);
             this.Staff_Detail.TabIndex = 21;
@@ -93,10 +102,13 @@
             // 
             // Menu_Detail
             // 
-            this.Menu_Detail.BackColor = System.Drawing.Color.Blue;
+            this.Menu_Detail.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.Menu_Detail.FlatAppearance.BorderSize = 2;
+            this.Menu_Detail.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Green;
+            this.Menu_Detail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Menu_Detail.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold);
             this.Menu_Detail.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Menu_Detail.Location = new System.Drawing.Point(23, 264);
+            this.Menu_Detail.Location = new System.Drawing.Point(65, 257);
             this.Menu_Detail.Name = "Menu_Detail";
             this.Menu_Detail.Size = new System.Drawing.Size(253, 64);
             this.Menu_Detail.TabIndex = 22;
@@ -106,10 +118,13 @@
             // 
             // Product_Detail
             // 
-            this.Product_Detail.BackColor = System.Drawing.Color.Blue;
+            this.Product_Detail.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.Product_Detail.FlatAppearance.BorderSize = 2;
+            this.Product_Detail.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Green;
+            this.Product_Detail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Product_Detail.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold);
             this.Product_Detail.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Product_Detail.Location = new System.Drawing.Point(23, 176);
+            this.Product_Detail.Location = new System.Drawing.Point(65, 176);
             this.Product_Detail.Name = "Product_Detail";
             this.Product_Detail.Size = new System.Drawing.Size(253, 64);
             this.Product_Detail.TabIndex = 23;
@@ -119,10 +134,13 @@
             // 
             // View_Tables_Reservation
             // 
-            this.View_Tables_Reservation.BackColor = System.Drawing.Color.Blue;
+            this.View_Tables_Reservation.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.View_Tables_Reservation.FlatAppearance.BorderSize = 2;
+            this.View_Tables_Reservation.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Green;
+            this.View_Tables_Reservation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.View_Tables_Reservation.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold);
             this.View_Tables_Reservation.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.View_Tables_Reservation.Location = new System.Drawing.Point(23, 358);
+            this.View_Tables_Reservation.Location = new System.Drawing.Point(65, 337);
             this.View_Tables_Reservation.Name = "View_Tables_Reservation";
             this.View_Tables_Reservation.Size = new System.Drawing.Size(253, 64);
             this.View_Tables_Reservation.TabIndex = 24;
@@ -132,10 +150,13 @@
             // 
             // Supplier_Details
             // 
-            this.Supplier_Details.BackColor = System.Drawing.Color.Blue;
+            this.Supplier_Details.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.Supplier_Details.FlatAppearance.BorderSize = 2;
+            this.Supplier_Details.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Green;
+            this.Supplier_Details.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Supplier_Details.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold);
             this.Supplier_Details.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Supplier_Details.Location = new System.Drawing.Point(314, 176);
+            this.Supplier_Details.Location = new System.Drawing.Point(65, 106);
             this.Supplier_Details.Name = "Supplier_Details";
             this.Supplier_Details.Size = new System.Drawing.Size(253, 64);
             this.Supplier_Details.TabIndex = 25;
@@ -145,10 +166,13 @@
             // 
             // Vendor_Details
             // 
-            this.Vendor_Details.BackColor = System.Drawing.Color.Blue;
+            this.Vendor_Details.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.Vendor_Details.FlatAppearance.BorderSize = 2;
+            this.Vendor_Details.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Green;
+            this.Vendor_Details.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Vendor_Details.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold);
             this.Vendor_Details.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Vendor_Details.Location = new System.Drawing.Point(23, 476);
+            this.Vendor_Details.Location = new System.Drawing.Point(65, 419);
             this.Vendor_Details.Name = "Vendor_Details";
             this.Vendor_Details.Size = new System.Drawing.Size(253, 64);
             this.Vendor_Details.TabIndex = 26;
@@ -158,10 +182,10 @@
             // 
             // Back
             // 
-            this.Back.BackColor = System.Drawing.Color.Blue;
+            this.Back.BackColor = System.Drawing.Color.DarkSlateGray;
             this.Back.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold);
             this.Back.ForeColor = System.Drawing.Color.White;
-            this.Back.Location = new System.Drawing.Point(944, 539);
+            this.Back.Location = new System.Drawing.Point(65, 582);
             this.Back.Name = "Back";
             this.Back.Size = new System.Drawing.Size(187, 47);
             this.Back.TabIndex = 27;
@@ -171,20 +195,27 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Blue;
+            this.button1.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.button1.FlatAppearance.BorderSize = 2;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Green;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold);
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(314, 12);
+            this.button1.Location = new System.Drawing.Point(340, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(253, 145);
             this.button1.TabIndex = 28;
             this.button1.Text = "Reports And Analytics";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // Admin_function
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1282, 653);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Back);

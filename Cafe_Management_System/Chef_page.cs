@@ -60,8 +60,8 @@ namespace Cafe_Management_System
                 dr.Read();
                  MessageBox.Show("Successfully Login");
                     this.Hide();
-                    Customer_page cp = new Customer_page();
-                    cp.Show();
+                    Chef_functions cf= new Chef_functions();
+                cf.Show();
 
                
 

@@ -61,10 +61,12 @@
             // 
             // Admin_signin
             // 
-            this.Admin_signin.BackColor = System.Drawing.Color.Blue;
-            this.Admin_signin.Location = new System.Drawing.Point(105, 315);
+            this.Admin_signin.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.Admin_signin.FlatAppearance.BorderSize = 2;
+            this.Admin_signin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            this.Admin_signin.Location = new System.Drawing.Point(202, 304);
             this.Admin_signin.Name = "Admin_signin";
-            this.Admin_signin.Size = new System.Drawing.Size(220, 53);
+            this.Admin_signin.Size = new System.Drawing.Size(159, 53);
             this.Admin_signin.TabIndex = 3;
             this.Admin_signin.Text = "Sign In";
             this.Admin_signin.UseVisualStyleBackColor = false;
@@ -72,10 +74,12 @@
             // 
             // Admin_password_input
             // 
-            this.Admin_password_input.Location = new System.Drawing.Point(49, 240);
+            this.Admin_password_input.Location = new System.Drawing.Point(74, 233);
             this.Admin_password_input.Name = "Admin_password_input";
             this.Admin_password_input.Size = new System.Drawing.Size(276, 40);
             this.Admin_password_input.TabIndex = 2;
+            this.Admin_password_input.UseSystemPasswordChar = true;
+            this.Admin_password_input.TextChanged += new System.EventHandler(this.Admin_password_input_TextChanged);
             // 
             // Admin_password
             // 
@@ -88,7 +92,7 @@
             // 
             // Admin_id_input
             // 
-            this.Admin_id_input.Location = new System.Drawing.Point(48, 99);
+            this.Admin_id_input.Location = new System.Drawing.Point(73, 90);
             this.Admin_id_input.Name = "Admin_id_input";
             this.Admin_id_input.Size = new System.Drawing.Size(277, 40);
             this.Admin_id_input.TabIndex = 1;
@@ -130,10 +134,13 @@
             // 
             // Exit
             // 
-            this.Exit.BackColor = System.Drawing.Color.Blue;
+            this.Exit.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.Exit.FlatAppearance.BorderSize = 2;
+            this.Exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Exit.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold);
             this.Exit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Exit.Location = new System.Drawing.Point(64, 459);
+            this.Exit.Location = new System.Drawing.Point(1055, 567);
             this.Exit.Name = "Exit";
             this.Exit.Size = new System.Drawing.Size(197, 53);
             this.Exit.TabIndex = 5;
@@ -143,10 +150,13 @@
             // 
             // Back
             // 
-            this.Back.BackColor = System.Drawing.Color.Blue;
+            this.Back.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.Back.FlatAppearance.BorderSize = 2;
+            this.Back.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.Back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Back.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold);
             this.Back.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Back.Location = new System.Drawing.Point(64, 306);
+            this.Back.Location = new System.Drawing.Point(56, 567);
             this.Back.Name = "Back";
             this.Back.Size = new System.Drawing.Size(197, 53);
             this.Back.TabIndex = 4;
@@ -159,6 +169,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1282, 653);
             this.Controls.Add(this.Admin_signin_box);
             this.Controls.Add(this.Admin_heading);
@@ -168,6 +179,7 @@
             this.Name = "Admin_page";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin_page";
+            this.Load += new System.EventHandler(this.Admin_page_Load);
             this.Admin_signin_box.ResumeLayout(false);
             this.Admin_signin_box.PerformLayout();
             this.ResumeLayout(false);

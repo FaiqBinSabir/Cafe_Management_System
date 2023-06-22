@@ -62,8 +62,8 @@ namespace Cafe_Management_System
                 {
                     MessageBox.Show("Successfully Login");
                     this.Hide();
-                    Customer_page cp = new Customer_page(); 
-                    cp.Show();
+                    Customer_table__Reservation ct = new Customer_table__Reservation();
+                    ct.Show();
 
                 }
                 else
@@ -82,6 +82,11 @@ namespace Cafe_Management_System
 
 
 
+
+        }
+
+        private void Customer_signin_Load(object sender, EventArgs e)
+        {
 
         }
     }

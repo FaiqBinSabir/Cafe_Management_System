@@ -118,10 +118,8 @@ namespace Cafe_Management_System
 
             if (a > 0)
             {
-                MessageBox.Show("account created sucessfully");
-                this.Hide();
-                Customer_signin cs = new Customer_signin();
-                cs.Show();
+                MessageBox.Show("item inserted sucessfully");
+               
 
 
 
@@ -148,6 +146,26 @@ namespace Cafe_Management_System
             Menu_name_input.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
             Menu_Price_input.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
             Admin_id_input.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
+        }
+
+        private void Menu_Price_input_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                int a = Convert.ToInt32(Menu_Price_input.Text);
+                if (a < 0)
+                {
+                    Menu_Price_input.Text = "";
+
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+
+                MessageBox.Show("netagtive value can't entered" + ex);
+            }
         }
     }
 }

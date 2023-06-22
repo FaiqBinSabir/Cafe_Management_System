@@ -10,6 +10,12 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
+using System.Text.RegularExpressions;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Tab;
+using System.Net.Mail;
+using System.Net;
+using System.Xml.Linq;
 
 namespace Cafe_Management_System
 {
@@ -62,11 +68,28 @@ namespace Cafe_Management_System
 
         }
 
+
+        
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+           
+            SqlConnection con = new SqlConnection(cs);
+            string query = "select * from [Reservations] where  Customer_id="+Convert.ToInt32(Customer_id_input.Text);
+            con.Open();
+           
+                SqlDataAdapter adapter = new SqlDataAdapter(query, con);
+                DataTable dataTable = new DataTable();
+                adapter.Fill(dataTable);
+                dataGridView1.DataSource = dataTable;
+           con.Close();
+        }
+
         private void Reserve_Table_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection(cs);
             string query = "insert into reservations values (@desc,@c_id,@t_id,@date)";
-            
+
             SqlCommand cmd = new SqlCommand(query, con);
 
             string vq1;
@@ -79,7 +102,7 @@ namespace Cafe_Management_System
                 {
                     MessageBox.Show("Sorry cant reseve it as date passed..");
 
-                    return; 
+                    return;
                 }
 
                 dateTimePicker1.Text = vq1;
@@ -100,13 +123,25 @@ namespace Cafe_Management_System
 
             int a = cmd.ExecuteNonQuery();
 
-            if (a > 0) {
-
-                
-
+            if (a > 0)
+            {
                 MessageBox.Show(" reservation sucessfully");
 
-
+                try
+                {
+                    MailMessage mail = new MailMessage("intakhabmalik0582001@gmail.com", email_input.Text, "Reservation Successful", "your reservation for table"+table_number_input.Text+ "booking on " + dateTimePicker1.Text + "  is confirmed. Thanks for using our application and we wish you had a pleasure experience at our cafe.");
+                    SmtpClient c = new SmtpClient(smptt_input.Text);
+                   // SmtpClient client = new SmtpClient(smtp.SelectedItem.ToString());
+                    c.Port = 587;
+                    c.Credentials = new NetworkCredential("intakhabmalik0582001@gmail.com", "vtmemfxitutemawx");
+                    c.EnableSsl = true;
+                    c.Send(mail);
+                    MessageBox.Show("Email Sent!!", "Success", MessageBoxButtons.OK);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
 
 
 
@@ -117,36 +152,7 @@ namespace Cafe_Management_System
                 MessageBox.Show("cant entered your data");
             }
             con.Close();
-          
-        }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            
-            
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            //SqlConnection con = new SqlConnection(cs);
-            //string query = "select * from  [Reservations] where customer_id=@c_id";
-
-            //SqlCommand cmd = new SqlCommand(query, con);
-
-            //cmd.Parameters.AddWithValue("@c_id", Customer_id_input.Text.Trim());
-            //con.Open();
-            SqlConnection con = new SqlConnection(cs);
-            string query = "select * from [Reservations] where  Customer_id="+Convert.ToInt32(Customer_id_input.Text);
-            con.Open();
-           
-                SqlDataAdapter adapter = new SqlDataAdapter(query, con);
-                DataTable dataTable = new DataTable();
-                adapter.Fill(dataTable);
-                dataGridView1.DataSource = dataTable;
-           con.Close(); 
-           
-           
         }
     }
 }

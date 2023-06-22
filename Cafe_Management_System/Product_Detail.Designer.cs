@@ -68,7 +68,7 @@
             this.Product_CRUD_box.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Product_CRUD_box.Location = new System.Drawing.Point(267, 82);
             this.Product_CRUD_box.Name = "Product_CRUD_box";
-            this.Product_CRUD_box.Size = new System.Drawing.Size(479, 507);
+            this.Product_CRUD_box.Size = new System.Drawing.Size(479, 355);
             this.Product_CRUD_box.TabIndex = 30;
             this.Product_CRUD_box.TabStop = false;
             this.Product_CRUD_box.Text = "Product";
@@ -78,9 +78,9 @@
             this.Admin__id.AutoSize = true;
             this.Admin__id.Location = new System.Drawing.Point(16, 302);
             this.Admin__id.Name = "Admin__id";
-            this.Admin__id.Size = new System.Drawing.Size(120, 35);
+            this.Admin__id.Size = new System.Drawing.Size(131, 35);
             this.Admin__id.TabIndex = 10;
-            this.Admin__id.Text = "Admin id";
+            this.Admin__id.Text = "Admin ID:";
             // 
             // Admin_id_inputt
             // 
@@ -95,6 +95,7 @@
             this.product_quan_input.Name = "product_quan_input";
             this.product_quan_input.Size = new System.Drawing.Size(276, 40);
             this.product_quan_input.TabIndex = 8;
+            this.product_quan_input.TextChanged += new System.EventHandler(this.product_quan_input_TextChanged);
             // 
             // Vendor_id_input
             // 
@@ -102,24 +103,25 @@
             this.Vendor_id_input.Name = "Vendor_id_input";
             this.Vendor_id_input.Size = new System.Drawing.Size(276, 40);
             this.Vendor_id_input.TabIndex = 7;
+            this.Vendor_id_input.TextChanged += new System.EventHandler(this.Vendor_id_input_TextChanged);
             // 
             // Vendor_id
             // 
             this.Vendor_id.AutoSize = true;
             this.Vendor_id.Location = new System.Drawing.Point(16, 167);
             this.Vendor_id.Name = "Vendor_id";
-            this.Vendor_id.Size = new System.Drawing.Size(133, 35);
+            this.Vendor_id.Size = new System.Drawing.Size(141, 35);
             this.Vendor_id.TabIndex = 6;
-            this.Vendor_id.Text = "vendor_id";
+            this.Vendor_id.Text = "vendor_id:";
             // 
             // product_quantity
             // 
             this.product_quantity.AutoSize = true;
             this.product_quantity.Location = new System.Drawing.Point(16, 237);
             this.product_quantity.Name = "product_quantity";
-            this.product_quantity.Size = new System.Drawing.Size(117, 35);
+            this.product_quantity.Size = new System.Drawing.Size(125, 35);
             this.product_quantity.TabIndex = 5;
-            this.product_quantity.Text = "Quantity";
+            this.product_quantity.Text = "Quantity:";
             // 
             // Product_name_input
             // 
@@ -149,24 +151,29 @@
             this.Food_id.AutoSize = true;
             this.Food_id.Location = new System.Drawing.Point(16, 55);
             this.Food_id.Name = "Food_id";
-            this.Food_id.Size = new System.Drawing.Size(51, 35);
+            this.Food_id.Size = new System.Drawing.Size(48, 35);
             this.Food_id.TabIndex = 0;
-            this.Food_id.Text = "id :";
+            this.Food_id.Text = "ID:";
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.RoyalBlue;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.GridColor = System.Drawing.Color.SaddleBrown;
             this.dataGridView1.Location = new System.Drawing.Point(791, 63);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(439, 526);
+            this.dataGridView1.Size = new System.Drawing.Size(439, 413);
             this.dataGridView1.TabIndex = 29;
             this.dataGridView1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.dataGridView1_MouseDoubleClick);
             // 
             // Insert_Product
             // 
-            this.Insert_Product.BackColor = System.Drawing.Color.Blue;
+            this.Insert_Product.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.Insert_Product.FlatAppearance.BorderSize = 2;
+            this.Insert_Product.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            this.Insert_Product.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Insert_Product.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold);
             this.Insert_Product.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Insert_Product.Location = new System.Drawing.Point(36, 165);
@@ -179,10 +186,13 @@
             // 
             // Delete_Product
             // 
-            this.Delete_Product.BackColor = System.Drawing.Color.Blue;
+            this.Delete_Product.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.Delete_Product.FlatAppearance.BorderSize = 2;
+            this.Delete_Product.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            this.Delete_Product.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Delete_Product.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold);
             this.Delete_Product.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Delete_Product.Location = new System.Drawing.Point(36, 241);
+            this.Delete_Product.Location = new System.Drawing.Point(36, 249);
             this.Delete_Product.Name = "Delete_Product";
             this.Delete_Product.Size = new System.Drawing.Size(213, 53);
             this.Delete_Product.TabIndex = 27;
@@ -192,12 +202,15 @@
             // 
             // Update_Product
             // 
-            this.Update_Product.BackColor = System.Drawing.Color.Blue;
+            this.Update_Product.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.Update_Product.FlatAppearance.BorderSize = 2;
+            this.Update_Product.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            this.Update_Product.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Update_Product.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold);
             this.Update_Product.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Update_Product.Location = new System.Drawing.Point(36, 334);
+            this.Update_Product.Location = new System.Drawing.Point(36, 319);
             this.Update_Product.Name = "Update_Product";
-            this.Update_Product.Size = new System.Drawing.Size(225, 53);
+            this.Update_Product.Size = new System.Drawing.Size(213, 53);
             this.Update_Product.TabIndex = 26;
             this.Update_Product.Text = "Update Product";
             this.Update_Product.UseVisualStyleBackColor = false;
@@ -205,7 +218,10 @@
             // 
             // View_Product
             // 
-            this.View_Product.BackColor = System.Drawing.Color.Blue;
+            this.View_Product.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.View_Product.FlatAppearance.BorderSize = 2;
+            this.View_Product.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            this.View_Product.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.View_Product.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold);
             this.View_Product.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.View_Product.Location = new System.Drawing.Point(36, 82);
@@ -218,10 +234,13 @@
             // 
             // Back
             // 
-            this.Back.BackColor = System.Drawing.Color.Blue;
+            this.Back.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.Back.FlatAppearance.BorderSize = 2;
+            this.Back.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.Back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Back.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold);
             this.Back.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Back.Location = new System.Drawing.Point(36, 418);
+            this.Back.Location = new System.Drawing.Point(21, 566);
             this.Back.Name = "Back";
             this.Back.Size = new System.Drawing.Size(213, 53);
             this.Back.TabIndex = 24;
@@ -231,10 +250,13 @@
             // 
             // Exit
             // 
-            this.Exit.BackColor = System.Drawing.Color.Blue;
+            this.Exit.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.Exit.FlatAppearance.BorderSize = 2;
+            this.Exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Exit.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold);
             this.Exit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Exit.Location = new System.Drawing.Point(36, 512);
+            this.Exit.Location = new System.Drawing.Point(1033, 575);
             this.Exit.Name = "Exit";
             this.Exit.Size = new System.Drawing.Size(213, 53);
             this.Exit.TabIndex = 23;
@@ -247,6 +269,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1282, 653);
             this.Controls.Add(this.Product_CRUD_box);
             this.Controls.Add(this.dataGridView1);

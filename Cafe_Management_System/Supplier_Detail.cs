@@ -150,5 +150,30 @@ namespace Cafe_Management_System
             product_id_input.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
             Admin_id_inputt.Text = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
         }
+
+        private void Supplier_number_input_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                int a = Convert.ToInt32(Supplier_number_input.Text);
+                if (a < 0)
+                {
+                    Supplier_number_input.Text = "";
+
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+
+                MessageBox.Show("netagtive value can't entered" + ex);
+            }
+        }
+
+        private void product_id_input_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

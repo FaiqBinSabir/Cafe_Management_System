@@ -89,12 +89,15 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Blue;
+            this.button1.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.button1.FlatAppearance.BorderSize = 2;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold);
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(98, 389);
+            this.button1.Location = new System.Drawing.Point(214, 362);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(197, 53);
+            this.button1.Size = new System.Drawing.Size(125, 53);
             this.button1.TabIndex = 13;
             this.button1.Text = "Sign in";
             this.button1.UseVisualStyleBackColor = false;
@@ -102,7 +105,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(49, 312);
+            this.textBox1.Location = new System.Drawing.Point(63, 304);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(276, 40);
@@ -111,10 +114,11 @@
             // 
             // Chef_password_input
             // 
-            this.Chef_password_input.Location = new System.Drawing.Point(49, 216);
+            this.Chef_password_input.Location = new System.Drawing.Point(63, 216);
             this.Chef_password_input.Name = "Chef_password_input";
             this.Chef_password_input.Size = new System.Drawing.Size(276, 40);
             this.Chef_password_input.TabIndex = 2;
+            this.Chef_password_input.UseSystemPasswordChar = true;
             // 
             // chef_password
             // 
@@ -127,7 +131,7 @@
             // 
             // Chef_id_input
             // 
-            this.Chef_id_input.Location = new System.Drawing.Point(48, 99);
+            this.Chef_id_input.Location = new System.Drawing.Point(62, 90);
             this.Chef_id_input.Name = "Chef_id_input";
             this.Chef_id_input.Size = new System.Drawing.Size(277, 40);
             this.Chef_id_input.TabIndex = 1;
@@ -143,10 +147,13 @@
             // 
             // Back
             // 
-            this.Back.BackColor = System.Drawing.Color.Blue;
+            this.Back.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.Back.FlatAppearance.BorderSize = 2;
+            this.Back.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.Back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Back.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold);
             this.Back.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Back.Location = new System.Drawing.Point(96, 313);
+            this.Back.Location = new System.Drawing.Point(69, 543);
             this.Back.Name = "Back";
             this.Back.Size = new System.Drawing.Size(197, 53);
             this.Back.TabIndex = 4;
@@ -156,10 +163,13 @@
             // 
             // Exit
             // 
-            this.Exit.BackColor = System.Drawing.Color.Blue;
+            this.Exit.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.Exit.FlatAppearance.BorderSize = 2;
+            this.Exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Exit.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold);
             this.Exit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Exit.Location = new System.Drawing.Point(96, 473);
+            this.Exit.Location = new System.Drawing.Point(1073, 543);
             this.Exit.Name = "Exit";
             this.Exit.Size = new System.Drawing.Size(197, 53);
             this.Exit.TabIndex = 5;
@@ -172,6 +182,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1282, 653);
             this.Controls.Add(this.Exit);
             this.Controls.Add(this.Back);

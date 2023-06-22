@@ -35,16 +35,17 @@ namespace Cafe_Management_System
         private void Insert_Staff_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection(cs);
-            string query = "insert into staff values (@id,@name,@phone,@email,@passsword,@adminid,@type)";
+            string query = "insert into staff values (@id,@name,@phone,@email,@password,adminid,@type)";
             SqlCommand cmd = new SqlCommand(query, con);
 
             cmd.Parameters.AddWithValue("@name", Staff_name_input.Text);
             cmd.Parameters.AddWithValue("@phone", Staff_number_input.Text);
             cmd.Parameters.AddWithValue("@id", Staff_id_input.Text);
-            cmd.Parameters.AddWithValue("@adminid", Admin_id_input.Text);
+            cmd.Parameters.AddWithValue("@adminid", 7833);
             cmd.Parameters.AddWithValue("@email", Staff__email_input.Text);
-            cmd.Parameters.AddWithValue("@password", Staff_password_inputt.Text);
             cmd.Parameters.AddWithValue("@type", staff_type_input.Text);
+
+            cmd.Parameters.AddWithValue("@password", Staff_password_inputt.Text.ToString());
             con.Open();
 
             int a = cmd.ExecuteNonQuery();

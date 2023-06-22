@@ -61,10 +61,13 @@
             // 
             // Customer__signin
             // 
-            this.Customer__signin.BackColor = System.Drawing.Color.Blue;
-            this.Customer__signin.Location = new System.Drawing.Point(105, 315);
+            this.Customer__signin.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.Customer__signin.FlatAppearance.BorderSize = 2;
+            this.Customer__signin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            this.Customer__signin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Customer__signin.Location = new System.Drawing.Point(197, 315);
             this.Customer__signin.Name = "Customer__signin";
-            this.Customer__signin.Size = new System.Drawing.Size(220, 53);
+            this.Customer__signin.Size = new System.Drawing.Size(128, 53);
             this.Customer__signin.TabIndex = 3;
             this.Customer__signin.Text = "Sign In";
             this.Customer__signin.UseVisualStyleBackColor = false;
@@ -72,10 +75,11 @@
             // 
             // Customer_password_input
             // 
-            this.Customer_password_input.Location = new System.Drawing.Point(49, 240);
+            this.Customer_password_input.Location = new System.Drawing.Point(80, 236);
             this.Customer_password_input.Name = "Customer_password_input";
             this.Customer_password_input.Size = new System.Drawing.Size(276, 40);
             this.Customer_password_input.TabIndex = 2;
+            this.Customer_password_input.UseSystemPasswordChar = true;
             // 
             // Waiter_password
             // 
@@ -88,7 +92,7 @@
             // 
             // Customer_id_input
             // 
-            this.Customer_id_input.Location = new System.Drawing.Point(48, 99);
+            this.Customer_id_input.Location = new System.Drawing.Point(79, 99);
             this.Customer_id_input.Name = "Customer_id_input";
             this.Customer_id_input.Size = new System.Drawing.Size(277, 40);
             this.Customer_id_input.TabIndex = 1;
@@ -130,10 +134,13 @@
             // 
             // Exit
             // 
-            this.Exit.BackColor = System.Drawing.Color.Blue;
+            this.Exit.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.Exit.FlatAppearance.BorderSize = 2;
+            this.Exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Exit.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold);
             this.Exit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Exit.Location = new System.Drawing.Point(96, 388);
+            this.Exit.Location = new System.Drawing.Point(1073, 547);
             this.Exit.Name = "Exit";
             this.Exit.Size = new System.Drawing.Size(197, 53);
             this.Exit.TabIndex = 5;
@@ -143,10 +150,13 @@
             // 
             // Back
             // 
-            this.Back.BackColor = System.Drawing.Color.Blue;
+            this.Back.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.Back.FlatAppearance.BorderSize = 2;
+            this.Back.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.Back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Back.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold);
             this.Back.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Back.Location = new System.Drawing.Point(96, 139);
+            this.Back.Location = new System.Drawing.Point(70, 547);
             this.Back.Name = "Back";
             this.Back.Size = new System.Drawing.Size(197, 53);
             this.Back.TabIndex = 4;
@@ -159,6 +169,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1282, 653);
             this.Controls.Add(this.Customer_signin_box);
             this.Controls.Add(this.Customer_heading);
@@ -168,6 +179,7 @@
             this.Name = "Customer_signin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Waiter";
+            this.Load += new System.EventHandler(this.Customer_signin_Load);
             this.Customer_signin_box.ResumeLayout(false);
             this.Customer_signin_box.PerformLayout();
             this.ResumeLayout(false);

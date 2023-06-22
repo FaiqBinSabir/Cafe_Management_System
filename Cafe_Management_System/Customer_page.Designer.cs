@@ -82,12 +82,15 @@
             // 
             // Exit
             // 
-            this.Exit.BackColor = System.Drawing.Color.Blue;
+            this.Exit.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.Exit.FlatAppearance.BorderSize = 2;
+            this.Exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Exit.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold);
             this.Exit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Exit.Location = new System.Drawing.Point(87, 500);
+            this.Exit.Location = new System.Drawing.Point(1016, 588);
             this.Exit.Name = "Exit";
-            this.Exit.Size = new System.Drawing.Size(197, 53);
+            this.Exit.Size = new System.Drawing.Size(234, 53);
             this.Exit.TabIndex = 14;
             this.Exit.Text = "Exi&t";
             this.Exit.UseVisualStyleBackColor = false;
@@ -95,12 +98,15 @@
             // 
             // Back
             // 
-            this.Back.BackColor = System.Drawing.Color.Blue;
+            this.Back.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.Back.FlatAppearance.BorderSize = 2;
+            this.Back.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.Back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Back.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold);
             this.Back.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Back.Location = new System.Drawing.Point(87, 419);
+            this.Back.Location = new System.Drawing.Point(12, 588);
             this.Back.Name = "Back";
-            this.Back.Size = new System.Drawing.Size(197, 53);
+            this.Back.Size = new System.Drawing.Size(234, 53);
             this.Back.TabIndex = 13;
             this.Back.Text = "Back";
             this.Back.UseVisualStyleBackColor = false;
@@ -119,12 +125,15 @@
             // 
             // View_Menu
             // 
-            this.View_Menu.BackColor = System.Drawing.Color.Blue;
+            this.View_Menu.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.View_Menu.FlatAppearance.BorderSize = 2;
+            this.View_Menu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            this.View_Menu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.View_Menu.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold);
             this.View_Menu.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.View_Menu.Location = new System.Drawing.Point(87, 92);
+            this.View_Menu.Location = new System.Drawing.Point(67, 92);
             this.View_Menu.Name = "View_Menu";
-            this.View_Menu.Size = new System.Drawing.Size(197, 53);
+            this.View_Menu.Size = new System.Drawing.Size(234, 53);
             this.View_Menu.TabIndex = 18;
             this.View_Menu.Text = "View Menu";
             this.View_Menu.UseVisualStyleBackColor = false;
@@ -132,23 +141,29 @@
             // 
             // Customer_signin
             // 
-            this.Customer_signin.BackColor = System.Drawing.Color.Blue;
+            this.Customer_signin.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.Customer_signin.FlatAppearance.BorderSize = 2;
+            this.Customer_signin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            this.Customer_signin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Customer_signin.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold);
             this.Customer_signin.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Customer_signin.Location = new System.Drawing.Point(87, 193);
+            this.Customer_signin.Location = new System.Drawing.Point(67, 188);
             this.Customer_signin.Name = "Customer_signin";
-            this.Customer_signin.Size = new System.Drawing.Size(197, 53);
+            this.Customer_signin.Size = new System.Drawing.Size(234, 53);
             this.Customer_signin.TabIndex = 19;
-            this.Customer_signin.Text = "211";
+            this.Customer_signin.Text = "Login";
             this.Customer_signin.UseVisualStyleBackColor = false;
             this.Customer_signin.Click += new System.EventHandler(this.Customer_signin_Click);
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Blue;
+            this.button1.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.button1.FlatAppearance.BorderSize = 2;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold);
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(67, 329);
+            this.button1.Location = new System.Drawing.Point(67, 274);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(234, 53);
             this.button1.TabIndex = 20;
@@ -213,7 +228,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(16, 237);
+            this.label2.Location = new System.Drawing.Point(26, 231);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(88, 35);
             this.label2.TabIndex = 5;
@@ -222,7 +237,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(16, 291);
+            this.label1.Location = new System.Drawing.Point(16, 288);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(125, 35);
             this.label1.TabIndex = 4;
@@ -230,10 +245,13 @@
             // 
             // Customer__signin
             // 
-            this.Customer__signin.BackColor = System.Drawing.Color.Blue;
-            this.Customer__signin.Location = new System.Drawing.Point(142, 374);
+            this.Customer__signin.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.Customer__signin.FlatAppearance.BorderSize = 2;
+            this.Customer__signin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Green;
+            this.Customer__signin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Customer__signin.Location = new System.Drawing.Point(310, 349);
             this.Customer__signin.Name = "Customer__signin";
-            this.Customer__signin.Size = new System.Drawing.Size(220, 53);
+            this.Customer__signin.Size = new System.Drawing.Size(135, 53);
             this.Customer__signin.TabIndex = 3;
             this.Customer__signin.Text = "Sign In";
             this.Customer__signin.UseVisualStyleBackColor = false;
@@ -279,14 +297,16 @@
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panel1.Location = new System.Drawing.Point(290, 84);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(980, 463);
+            this.panel1.Size = new System.Drawing.Size(980, 469);
             this.panel1.TabIndex = 22;
             // 
             // Customer_page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1282, 653);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.Customer_signin_box);

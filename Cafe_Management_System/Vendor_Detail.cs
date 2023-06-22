@@ -145,6 +145,36 @@ namespace Cafe_Management_System
             Vendor_address_input.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
             Admin_id_inputt.Text = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
         }
+
+        private void Vendor_CRUD_box_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Vendor_id_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Vendor_number_input_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                int a = Convert.ToInt32(Vendor_number_input.Text);
+                if (a < 0)
+                {
+                    Vendor_number_input.Text = "";
+
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+
+                MessageBox.Show("netagtive value can't entered" + ex);
+            }
+        }
     }
     }
 

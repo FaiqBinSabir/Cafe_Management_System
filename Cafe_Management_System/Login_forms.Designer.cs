@@ -45,11 +45,12 @@
             // 
             // Admin_box
             // 
-            this.Admin_box.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.Admin_box.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Admin_box.Controls.Add(this.Admin_signin);
+            this.Admin_box.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Admin_box.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold);
             this.Admin_box.ForeColor = System.Drawing.Color.White;
-            this.Admin_box.Location = new System.Drawing.Point(53, 73);
+            this.Admin_box.Location = new System.Drawing.Point(219, 156);
             this.Admin_box.Name = "Admin_box";
             this.Admin_box.Size = new System.Drawing.Size(211, 148);
             this.Admin_box.TabIndex = 0;
@@ -58,8 +59,11 @@
             // 
             // Admin_signin
             // 
-            this.Admin_signin.BackColor = System.Drawing.Color.Green;
-            this.Admin_signin.Location = new System.Drawing.Point(39, 64);
+            this.Admin_signin.BackColor = System.Drawing.Color.Black;
+            this.Admin_signin.FlatAppearance.BorderSize = 2;
+            this.Admin_signin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            this.Admin_signin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Admin_signin.Location = new System.Drawing.Point(40, 83);
             this.Admin_signin.Name = "Admin_signin";
             this.Admin_signin.Size = new System.Drawing.Size(119, 48);
             this.Admin_signin.TabIndex = 0;
@@ -69,11 +73,12 @@
             // 
             // Chef_box
             // 
-            this.Chef_box.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.Chef_box.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Chef_box.Controls.Add(this.Chef_signin);
+            this.Chef_box.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Chef_box.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold);
             this.Chef_box.ForeColor = System.Drawing.Color.White;
-            this.Chef_box.Location = new System.Drawing.Point(961, 73);
+            this.Chef_box.Location = new System.Drawing.Point(805, 156);
             this.Chef_box.Name = "Chef_box";
             this.Chef_box.Size = new System.Drawing.Size(211, 148);
             this.Chef_box.TabIndex = 1;
@@ -82,8 +87,11 @@
             // 
             // Chef_signin
             // 
-            this.Chef_signin.BackColor = System.Drawing.Color.Green;
-            this.Chef_signin.Location = new System.Drawing.Point(38, 62);
+            this.Chef_signin.BackColor = System.Drawing.Color.Black;
+            this.Chef_signin.FlatAppearance.BorderSize = 2;
+            this.Chef_signin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            this.Chef_signin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Chef_signin.Location = new System.Drawing.Point(50, 83);
             this.Chef_signin.Name = "Chef_signin";
             this.Chef_signin.Size = new System.Drawing.Size(119, 48);
             this.Chef_signin.TabIndex = 0;
@@ -93,8 +101,9 @@
             // 
             // Customer_box
             // 
-            this.Customer_box.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.Customer_box.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Customer_box.Controls.Add(this.Customer_signin);
+            this.Customer_box.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Customer_box.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold);
             this.Customer_box.ForeColor = System.Drawing.Color.White;
             this.Customer_box.Location = new System.Drawing.Point(518, 263);
@@ -106,8 +115,11 @@
             // 
             // Customer_signin
             // 
-            this.Customer_signin.BackColor = System.Drawing.Color.Green;
-            this.Customer_signin.Location = new System.Drawing.Point(39, 64);
+            this.Customer_signin.BackColor = System.Drawing.Color.Black;
+            this.Customer_signin.FlatAppearance.BorderSize = 2;
+            this.Customer_signin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            this.Customer_signin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Customer_signin.Location = new System.Drawing.Point(47, 85);
             this.Customer_signin.Name = "Customer_signin";
             this.Customer_signin.Size = new System.Drawing.Size(119, 48);
             this.Customer_signin.TabIndex = 0;
@@ -130,12 +142,15 @@
             // 
             // Back_button
             // 
-            this.Back_button.BackColor = System.Drawing.Color.Blue;
+            this.Back_button.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.Back_button.FlatAppearance.BorderSize = 2;
+            this.Back_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.Back_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Back_button.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold);
             this.Back_button.ForeColor = System.Drawing.Color.Transparent;
-            this.Back_button.Location = new System.Drawing.Point(700, 498);
+            this.Back_button.Location = new System.Drawing.Point(71, 570);
             this.Back_button.Name = "Back_button";
-            this.Back_button.Size = new System.Drawing.Size(128, 45);
+            this.Back_button.Size = new System.Drawing.Size(139, 52);
             this.Back_button.TabIndex = 10;
             this.Back_button.Text = "Back";
             this.Back_button.UseVisualStyleBackColor = false;
@@ -143,12 +158,15 @@
             // 
             // Exit_button
             // 
-            this.Exit_button.BackColor = System.Drawing.Color.Blue;
+            this.Exit_button.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.Exit_button.FlatAppearance.BorderSize = 2;
+            this.Exit_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.Exit_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Exit_button.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold);
             this.Exit_button.ForeColor = System.Drawing.Color.Transparent;
-            this.Exit_button.Location = new System.Drawing.Point(415, 498);
+            this.Exit_button.Location = new System.Drawing.Point(1077, 570);
             this.Exit_button.Name = "Exit_button";
-            this.Exit_button.Size = new System.Drawing.Size(128, 45);
+            this.Exit_button.Size = new System.Drawing.Size(155, 52);
             this.Exit_button.TabIndex = 11;
             this.Exit_button.Text = "Exi&t";
             this.Exit_button.UseVisualStyleBackColor = false;
@@ -159,6 +177,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1282, 653);
             this.Controls.Add(this.Exit_button);
             this.Controls.Add(this.Back_button);

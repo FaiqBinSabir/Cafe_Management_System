@@ -82,5 +82,15 @@ namespace Cafe_Management_System
             con.Close();
 
         }
+
+        private void Admin_password_input_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Admin_page_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -56,6 +56,9 @@
             // Go_To_System
             // 
             this.Go_To_System.BackColor = System.Drawing.Color.Chocolate;
+            this.Go_To_System.FlatAppearance.BorderSize = 2;
+            this.Go_To_System.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.Go_To_System.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Go_To_System.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Go_To_System.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.Go_To_System.Location = new System.Drawing.Point(870, 105);
@@ -69,6 +72,7 @@
             // location_link
             // 
             this.location_link.AutoSize = true;
+            this.location_link.LinkColor = System.Drawing.Color.Red;
             this.location_link.Location = new System.Drawing.Point(14, 212);
             this.location_link.Name = "location_link";
             this.location_link.Size = new System.Drawing.Size(208, 35);
@@ -97,6 +101,7 @@
             // Instagram_link
             // 
             this.Instagram_link.AutoSize = true;
+            this.Instagram_link.LinkColor = System.Drawing.Color.Red;
             this.Instagram_link.Location = new System.Drawing.Point(14, 48);
             this.Instagram_link.Name = "Instagram_link";
             this.Instagram_link.Size = new System.Drawing.Size(222, 35);
@@ -108,6 +113,7 @@
             // Whatsapp_link
             // 
             this.Whatsapp_link.AutoSize = true;
+            this.Whatsapp_link.LinkColor = System.Drawing.Color.Red;
             this.Whatsapp_link.Location = new System.Drawing.Point(14, 104);
             this.Whatsapp_link.Name = "Whatsapp_link";
             this.Whatsapp_link.Size = new System.Drawing.Size(225, 35);
@@ -119,6 +125,7 @@
             // Facebook_link
             // 
             this.Facebook_link.AutoSize = true;
+            this.Facebook_link.LinkColor = System.Drawing.Color.Red;
             this.Facebook_link.Location = new System.Drawing.Point(14, 157);
             this.Facebook_link.Name = "Facebook_link";
             this.Facebook_link.Size = new System.Drawing.Size(222, 35);
