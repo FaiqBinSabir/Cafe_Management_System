@@ -60,6 +60,9 @@ namespace Cafe_Management_System
                 dr.Close();
                 if (name == Customer_id_input.Text && pass == Customer_password_input.Text)
                 {
+
+                    Singleton_design_pattern singleton = Singleton_design_pattern.Instance;
+
                     MessageBox.Show("Successfully Login");
                     this.Hide();
                     Customer_table__Reservation ct = new Customer_table__Reservation();

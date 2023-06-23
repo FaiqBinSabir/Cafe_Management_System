@@ -59,6 +59,8 @@ namespace Cafe_Management_System
                 dr.Close();
                 if (name == Admin_id_input.Text && pass == Admin_password_input.Text)
                 {
+                    Singleton_design_pattern singleton = Singleton_design_pattern.Instance;
+                    
                     MessageBox.Show("Successfully Login");
                     this.Hide();
                     Admin_function af = new Admin_function();

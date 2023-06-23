@@ -57,8 +57,12 @@ namespace Cafe_Management_System
 
             if (dr.HasRows == true)
             {
+
                 dr.Read();
-                 MessageBox.Show("Successfully Login");
+
+                Singleton_design_pattern singleton = Singleton_design_pattern.Instance;
+
+                MessageBox.Show("Successfully Login");
                     this.Hide();
                     Chef_functions cf= new Chef_functions();
                 cf.Show();

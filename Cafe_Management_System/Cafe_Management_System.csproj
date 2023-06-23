@@ -121,6 +121,7 @@
     <Compile Include="Reports_analyticscs.Designer.cs">
       <DependentUpon>Reports_analyticscs.cs</DependentUpon>
     </Compile>
+    <Compile Include="Singleton_design_pattern.cs" />
     <Compile Include="Staff_Detail.cs">
       <SubType>Form</SubType>
     </Compile>
